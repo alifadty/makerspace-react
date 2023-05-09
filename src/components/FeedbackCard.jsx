@@ -1,0 +1,25 @@
+import React from 'react';
+import { avatar, quotationMark } from '../assets';
+
+const FeedbackCard = () => {
+    return (
+        <div className='bg-white p-8 rounded-3xl shadow-xl my-8 mx-2'>
+            <div className='flex justify-between'>
+                <div className='flex gap-4'>
+                    <img src={avatar} alt="avatar-image" />
+                    <div>
+                        <h1>Jane Doe</h1>
+                        <p>UI-UX Designer</p>
+                    </div>
+                </div>
+                <img className='h-8' src={quotationMark} alt="mark-icon" />
+            </div>
+
+            <div className='py-8'>
+                <h3 className='text-lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sodales ut eu sem integer vitae justo eget magna fermentum. Fusce id velit ut tortor.</h3>
+            </div>
+        </div>
+    );
+};
+
+export default FeedbackCard;
